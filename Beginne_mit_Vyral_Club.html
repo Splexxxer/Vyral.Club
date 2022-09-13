@@ -1,0 +1,431 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Vyral Club</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+<style>
+	.demo
+{
+	padding: 50px 0;
+}
+.heading-title
+{
+	margin-bottom: 50px;
+}
+
+.pricingTable{
+    border: 2px solid #e3e3e3;
+    text-align: center;
+    position: relative;
+    padding-bottom: 40px;
+    transform: translateZ(0px);
+}
+
+.pricingTable:before,
+.pricingTable:after{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    z-index: -1;
+    transition: all 0.5s ease 0s;
+}
+
+.pricingTable:before{
+    border-right: 2px solid #282b34;
+    border-left: 2px solid #282b34;
+    transform: scaleY(0);
+    transform-origin: 100% 0 0;
+}
+
+.pricingTable:after{
+    border-bottom: 2px solid #282b34;
+    border-top: 2px solid #282b34;
+    transform: scaleX(0);
+    transform-origin: 0 100% 0;
+}
+
+.pricingTable:hover:before{
+    transform: scaleY(1);
+}
+
+.pricingTable:hover:after{
+    transform: scaleX(1);
+}
+
+.pricingTable .pricingTable-header{
+    background: #282b34;
+    color: #fff;
+    margin: -2px -2px 35px;
+    padding: 40px 0;
+}
+
+.pricingTable .heading{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+	color: #f0f7ff;
+}
+
+.pricingTable .subtitle{
+    font-size: 14px;
+    display: block;
+}
+
+.pricingTable .price-value{
+    font-size: 72px;
+    font-weight: 600;
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.pricingTable .price-valueFree{
+    font-size: 52px;
+    font-weight: 600;
+    margin-top: 10px;
+	margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.pricingTable .currency{
+    font-size: 45px;
+    font-weight: normal;
+    position: absolute;
+    top: 2px;
+    left: -30px;
+}
+
+.pricingTable .month{
+    font-size: 20px;
+    position: absolute;
+    bottom: 17px;
+    right: -40px;
+}
+
+.pricingTable .pricing-content{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.pricingTable .pricing-content li{
+    font-size: 16px;
+    color: #7a7e82;
+    line-height: 40px;
+}
+
+.pricingTable .read{
+    display: inline-block;
+    border: 2px solid #7a7e82;
+    border-right: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #7a7e82;
+    padding: 9px 30px;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+.pricingTable .read:hover{
+    border-color: #282b34;
+    color: #282b34;
+}
+
+.pricingTable .read i{
+    font-size: 19px;
+    margin-top: -10px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transition: all 0.3s ease 0s;
+}
+
+.pricingTable .read:hover i{
+    right: 5px;
+}
+
+.pricingTable .read:before,
+.pricingTable .read:after{
+    content: "";
+    display: block;
+    height: 30px;
+    border-left: 2px solid #7a7e82;
+    position: absolute;
+    right: -11px;
+    transition: all 0.3s ease 0s;
+}
+
+.pricingTable .read:before{
+    bottom: -6px;
+    transform: rotate(45deg);
+}
+
+.pricingTable .read:after{
+    top: -6px;
+    transform: rotate(-45deg);
+}
+
+.pricingTable .read:hover:before,
+.pricingTable .read:hover:after{
+    border-left-color: #282b34;
+}
+
+@media screen and (max-width: 990px){
+    .pricingTable{ margin-bottom: 25px; }
+}
+
+.flex-container {
+    display: flex;
+	margin: 20px;
+}
+
+.flex-child {
+    flex: 1;
+	margin-right: 10px; 
+}  
+
+.flex-child:first-child {
+    margin-right: 20px; 
+} 
+
+g{color: green;
+	font-size: 30px;
+}
+
+r{color: red;
+	font-size: 30px;
+}
+
+
+</style>
+		
+		
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+						<div>
+							<img src="Vyral.png" alt="Logo" width="250" height="250">
+							<center>
+							<p1>The Vyral Club</p1><br>
+							
+							</center>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="index.html">Home</a></li>
+								
+								<li><a href="Beginne_mit_Vyral_Club.html">Beginne mit Vyral Club</a></li>
+								<li><a href="Hashtag_Generator.html">Hashtag Generator</a></li>
+								<li><a href="Über_uns.html">Über uns</a></li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style2">
+					<div class="title">Pläne</div>
+					<div class="container">
+
+						<!-- Content -->
+							<div class="demo">
+        <div class="container">
+<div class="flex-container">
+			<div class="flex-child">
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricingTable-header">
+                            <h3 class="heading">Freemium</h3>
+								<!--<span class="subtitle">Lorem ipsum dolor sit amet</span>-->
+                            <div class="price-valueFree">Free
+                                <span class="currency">€</span>
+                                <span class="month">/mo</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-content">
+                            <li>kostenlose Likes und Speicherungen<g>&#10004;</g></li>
+                            <li>Hashtag Generator<g>&#10004;</g></li>
+                            <li>Kommentargruppe (Ab 1. Oktober)<g>&#10004;</g></li>
+                            <li>Support<g>&#10004;</g></li>
+							<li>ein kostenloses E-Book<g>&#10004;</g></li>
+							<li>zweites kostenloses E-Book<r>&#10008;</r></li>
+							<li>10 EG Gutscheine<r>&#10008;</r></li>
+                            <li>Engage Gruppe<r>&#10008;</r></li>
+							<li>Nicht engagen<r>&#10008;</r></li>
+                            <li>Support von Admin persönlich<r>&#10008;</r></li>
+                        </ul>
+                        <a href="#" class="read">sign up<i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="flex-child">
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricingTable-header">
+                            <h3 class="heading">Gold</h3>
+                         <!--<span class="subtitle">Lorem ipsum dolor sit amet</span>-->
+                            <div class="price-value">20
+                                <span class="currency">€</span>
+                                <span class="month">/mo</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-content">
+                            <li>kostenlose Likes und Speicherungen<g>&#10004;</g></li>
+                            <li>Hashtag Generator<g>&#10004;</g></li>
+                            <li>Kommentargruppe (Ab 1. Oktober)<g>&#10004;</g></li>
+                            <li>Support<g>&#10004;</g></li>
+							<li>ein kostenloses E-Book<g>&#10004;</g></li>
+							<li>zweites kostenloses E-Book<g>&#10004;</g></li>
+							<li>10 EG Gutscheine<g>&#10004;</g></li>
+                            <li>Engage Gruppe<g>&#10004;</g></li>
+							<li>Nicht engagen<r>&#10008;</r></li>
+                            <li>Support von Admin persönlich<r>&#10008;</r></li>
+                        </ul>
+                        <a href="#" class="read">sign up<i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+			</div>
+			
+			<div class="flex-child">
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricingTable-header">
+                            <h3 class="heading">Diamant</h3>
+                            <!--<span class="subtitle">Lorem ipsum dolor sit amet</span>-->
+                            <div class="price-value">30
+                                <span class="currency">$</span>
+                                <span class="month">/mo</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-content">
+                            <li>kostenlose Likes und Speicherungen<g>&#10004;</g></li>
+                            <li>Hashtag Generator<g>&#10004;</g></li>
+                            <li>Kommentargruppe (Ab 1. Oktober)<g>&#10004;</g></li>
+                            <li>Support<g>&#10004;</g></li>
+							<li>ein kostenloses E-Book<g>&#10004;</g></li>
+							<li>zweites kostenloses E-Book<g>&#10004;</g></li>
+							<li>10 EG Gutscheine<g>&#10004;</g></li>
+                            <li>Engage Gruppe<g>&#10004;</g></li>
+							<li>Nicht engagen<g>&#10004;</g></li>
+                            <li>Support von Admin persönlich<g>&#10004;</g></li>
+                        </ul>
+                        <a href="#" class="read">sign up<i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+			
+        </div>
+    </div>
+	
+
+	</div>
+</div>
+
+		
+
+			<!-- Footer -->
+				<section id="footer" class="wrapper">
+					<div class="title">Impressum</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact Form -->
+									<div class="col-6 col-12-medium">
+									</div>
+								<!-- Contact -->
+									<section class="feature-list small">
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-home">Kontakt</h3>
+													<p>
+														Santino Seither und Fabian Stehle, Appsplosion, GbR<br />
+														Sperlingsweg 5<br/>
+														61462 Königstein<br/>
+														Represented by:
+														Santino Lopez Seither, Fabian Stehle
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-comment">Social</h3>
+													<p>
+														Instagram: <a href="https://www.instagram.com/vyral.club/">vyral.club</a><br />
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-envelope">Email</h3>
+													<p>
+														<a href="#">E-Mail: appsplosion.help@gmail.com</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-phone">Telefon</h3>
+													<p>
+														+4915254398565
+													</p>
+												</section>
+											</div>
+										</div>
+									</section>
+
+							</div>
+
+							</div>
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact -->
+									<section class="feature-list small">
+										<div class="row">
+										<div>
+									</section>
+
+							</div>
+						</div>
+						<div id="copyright">
+							<ul>
+								<li>Template by: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li><a href="Datenschutz.html">Datenschutz&shy;erkl&auml;rung</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
