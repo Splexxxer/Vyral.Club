@@ -18,11 +18,24 @@
 		margin: 10px;
 		}	
 		
+		table{
+		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+		text-align: center;
+		}
+		
 		td{
 		font-size: 20px;
 		padding-right:10px;
+		padding-left:10px;
 		}	
+		
+		.showHashtags{
+			border-style: solid;
+			height: 100px;
+			width: 200px;
+			border-color: black;
 			
+		}
 			
 		</style>
 	</head>
@@ -55,25 +68,26 @@
 				</section>
 
 			<!-- Main -->
-				<div id="main" class="wrapper style2">
+				<div id="main" class="wrapper style2"> 
+				<center style="font-size: 20px;">Der Hashtag Generator gibt dir die wichtigsten Hashtags aus, auf deine Nische angepasst.</center>	
 					<div class="title">Hashtag Generator</div>
 					<div class="container">
 					<center>
-
 						<!-- Content -->
 					<div class="container">
 						<h1>Wähle eine Kategorie</h1>
-						<div class="container">
-							<table>
-							  <tr>
+						<center>Deine Hashtags:</center>						
+						<div class="container">					
+							<table>					
+							  <tr>						  
 								<td>&nbsp</td>
-								<td colspan="2" id ="500k1">&nbsp</td>
-								<td colspan="2" id ="500k2">&nbsp</td>
+								<td colspan="1" id ="500k1">&nbsp</td>
+								<td colspan="3" id ="500k2">&nbsp</td>
 							  </tr>
 							  <tr>
 								<td>&nbsp</td>
-								<td colspan="2" id ="200k1">&nbsp</td>
-								<td colspan="2" id ="200k2">&nbsp</td>
+								<td colspan="1" id ="200k1">&nbsp</td>
+								<td colspan="3" id ="200k2">&nbsp</td>
 							  </tr>
 							  <tr>
 							  <td>&nbsp</td>
@@ -102,18 +116,50 @@
 								<td id ="5k4">&nbsp</td>
 								<td id ="5k5">&nbsp</td>
 							  </tr>
-							</table>
-							</div>
+							</table>	
+						</div>
 							<div class="button" onclick="genHashtag(erfolg)">erfolg</div>
 							<div class="button" onclick="genHashtag(spruecheZitate)">spruecheZitate</div>
 							<div class="button" onclick="genHashtag(finanzen)">finanzen</div>
 							<div class="button" onclick="genHashtag(fitness)">fitness</div>
 							<div class="button" onclick="genHashtag(lifestyle)">lifestyle</div>
-						</div>
-						</center>
+					</div>
+					</center>
 
 					</div>
+					<center>	
+					<div class="button" onclick="copyHashtags()" style="margin: 20px;"><h3 class="icon solid fa-copy" style="color: White;"></h3></div>
+					</center>	
 				</div>
+				
+				<script>
+				function copyHashtags(){
+									//a500k
+					const content = (document.getElementById("500k1").textContent) + " " + (document.getElementById("500k2").textContent) + " "
+									//a200k
+									+(document.getElementById("200k1").textContent) + " " + (document.getElementById("200k2").textContent) + " "
+									//a100k
+									+(document.getElementById("100k1").textContent) + " " + (document.getElementById("100k2").textContent) + " "
+									+ (document.getElementById("100k3").textContent) + " "
+									//a50k
+									+(document.getElementById("50k1").textContent) + " " + (document.getElementById("50k2").textContent) + " "
+									+ (document.getElementById("50k3").textContent) + " " + (document.getElementById("50k4").textContent) + " "
+									+ (document.getElementById("50k5").textContent) + " "
+									//a10k
+									+(document.getElementById("10k1").textContent) + " " + (document.getElementById("10k2").textContent) + " "
+									+ (document.getElementById("10k3").textContent) + " " + (document.getElementById("10k4").textContent) + " "
+									+ (document.getElementById("10k5").textContent) + " "
+									//a5k
+									+(document.getElementById("5k1").textContent) + " " + (document.getElementById("5k2").textContent) + " "
+									+ (document.getElementById("5k3").textContent) + " " + (document.getElementById("5k4").textContent) + " "
+									+ (document.getElementById("5k5").textContent) + " ";
+									
+									
+					navigator.clipboard.writeText(content);
+					
+					alert("Copied the text: " + content);
+					}
+				</script>
 				
 				<script>
 				const erfolg = [//a500k

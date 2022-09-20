@@ -210,28 +210,32 @@ r{color: red;
 
 
 
-t{
-    position: relative;
-}
-t img{
-    cursor: pointer;
-}
-#information{
-    display: none;
-    position: absolute;
-    left: 50px;
-    width: 120px;
-    height: 50px;
-	font-weight: 100
-    font-size: 14px;
-    background: white;
-}
-t img:hover + #information{
-    display: block;
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
 }
 
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: #282b34;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  border-color: #282b34;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
 
-
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 
 </style>
 		
@@ -293,10 +297,11 @@ t img:hover + #information{
 							<li>Ein kostenloses E-Book<g>&#10004;</g></li>
 							<li>Zweites kostenloses E-Book<r>&#10008;</r></li>
 							
-							<li>10 EG Gutscheine<r>&#10008;</r><t>
-							<img id="help" src="images/Questionmark.png" height="25" width="25"></img>
-							<div id="information">Pro Tag / Nicht Liken und Speichern</div>
-							</t></li>
+							<li>10 EG Gutscheine<r>&#10008;</r>
+							<div class="tooltip"><img src="images/Questionmark.png" height="25" width="25"></img>
+							<span class="tooltiptext">Pro Tag / Nicht Liken und Speichern</span>
+							</div>
+							</li>
 							
                             <li>Zugang zur Engagement Gruppe<r>&#10008;</r></li>
 							<li>Nicht engagen<r>&#10008;</r></li>
@@ -326,10 +331,11 @@ t img:hover + #information{
                             <li>Support<g>&#10004;</g></li>
 							<li>Ein kostenloses E-Book<g>&#10004;</g></li>
 							<li>Zweites kostenloses E-Book<g>&#10004;</g></li>
-							<li>10 EG Gutscheine<r>&#10008;</r><t>
-							<img id="help" src="images/Questionmark.png" height="25" width="25"></img>
-							<div id="information">Pro Tag / Nicht Liken und Speichern</div>
-							</t></li>
+							<li>10 EG Gutscheine<g>&#10004;</g><t>
+							<div class="tooltip"><img src="images/Questionmark.png" height="25" width="25"></img>
+							<span class="tooltiptext">Pro Tag / Nicht Liken und Speichern</span>
+							</div>
+							</li>
                             <li>Zugang zur Engagement Gruppe<g>&#10004;</g></li>
 							<li>Nicht engagen<r>&#10008;</r></li>
                             <li>Support vom Admin persönlich<r>&#10008;</r></li>
@@ -359,10 +365,11 @@ t img:hover + #information{
                             <li>Support<g>&#10004;</g></li>
 							<li>Ein kostenloses E-Book<g>&#10004;</g></li>
 							<li>Zweites kostenloses E-Book<g>&#10004;</g></li>
-							<li>10 EG Gutscheine<r>&#10008;</r><t>
-							<img id="help" src="images/Questionmark.png" height="25" width="25"></img>
-							<div id="information">Pro Tag / Nicht Liken und Speichern</div>
-							</t></li>
+							<li>10 EG Gutscheine<g>&#10004;</g><t>
+							<div class="tooltip"><img src="images/Questionmark.png" height="25" width="25"></img>
+							<span class="tooltiptext">Pro Tag / Nicht Liken und Speichern</span>
+							</div>
+							</li>
                             <li>Zugang zur Engagement Gruppe<g>&#10004;</g></li>
 							<li>Nicht engagen<g>&#10004;</g></li>
                             <li>Support vom Admin persönlich<g>&#10004;</g></li>
